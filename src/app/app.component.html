@@ -1,73 +1,223 @@
-<div class="landing-container">
-  <!-- Navigation Header -->
-  <header>
-    <div class="logo">🚀 LinkedIn Automator</div>
-    <div class="header-links">
-      <a href="https://github.com/HRathi553/LinkedIn-Job-Automator" target="_blank">View on GitHub</a>
+<div class="landing-page-wrapper">
+  
+  <!-- Navigation bar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-brand">
+        <span class="logo-icon">🔗</span>
+        <span class="logo-text">AutoApply PRO</span>
+      </div>
+      <div class="nav-links">
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#how-it-works" class="nav-link">How it Works</a>
+
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero-section">
+    <div class="hero-bg-graphic"></div>
+    <div class="container hero-container">
+      
+      <div class="hero-content">
+        <div class="badge">Free for all</div>
+        <h1 class="hero-title">
+          Automate your job search <br/>
+          <span class="highlight">while you sleep.</span>
+        </h1>
+        <p class="hero-subtitle">
+          A powerful desktop client that intelligently parses LinkedIn, finds hiring managers matching your skills, and sends your resume automatically.
+        </p>
+        
+        <div class="cta-group">
+          <!-- Windows Download (Primary) -->
+          <a [href]="win64Link" class="btn btn-primary btn-large">
+            <svg viewBox="0 0 88 88" width="22" height="22"><path fill="currentColor" d="M0 12.402l35.687-4.86.016 34.423-35.67-.156V12.402zm35.67 33.529l.028 34.453L0 75.44V46.07l35.67-.139zM87.33 0l.006 41.677-47.584.225V5.553L87.33 0zM39.752 46.223h47.584V87.69l-47.582-6.52v-34.94z"/></svg>
+            Download for Windows
+          </a>
+          
+          <div class="secondary-downloads">
+            <span class="version-label">v1.0.0 (64-bit)</span>
+            <span class="divider">•</span>
+            <a href="#alternative-downloads" class="text-link">Other platforms</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="app-mockup">
+          <div class="mockup-header">
+            <div class="mac-btns"><span></span><span></span><span></span></div>
+            <div class="mockup-title">LinkedIn Automator</div>
+          </div>
+          <div class="mockup-body">
+            <div class="log-line success">[10:45:01] Matched Backend Engineer role at Google.</div>
+            <div class="log-line info">[10:45:03] Extracting Hiring Manager: John Doe...</div>
+            <div class="log-line action">[10:45:08] Preparing personalized cover letter...</div>
+            <div class="log-line success highlight-log">[10:45:15] Resume sent successfully to j.doe@google.com! ✨</div>
+            <div class="log-line info">[10:45:20] Enforcing human-like delay (45s)...</div>
+            <div class="cursor-blink">_</div>
+          </div>
+        </div>
+        
+        <!-- Decorative elements -->
+        <div class="floating-stat card-1">
+          <div class="stat-icon">📨</div>
+          <div class="stat-text"><strong>50</strong> Applications/Day</div>
+        </div>
+        <div class="floating-stat card-2">
+          <div class="stat-icon">🎯</div>
+          <div class="stat-text"><strong>98%</strong> Accuracy Match</div>
+        </div>
+      </div>
+      
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <main>
-    <section class="hero">
-      <div class="hero-content">
-        <h1>Automate your job search <br><span>while you sleep.</span></h1>
-        <p class="subtitle">
-          A powerful desktop client that intelligently parses LinkedIn, finds hiring managers matching your skills, and sends your resume automatically.
-        </p>
+  <!-- Features Grid -->
+  <section id="features" class="features-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Built for <span class="highlight">Engineers</span></h2>
+        <p>Smart automation tools designed to bypass standard detection while maintaining a high quality bar for applications.</p>
+      </div>
+      
+      <div class="features-grid">
+        <!-- Feature 1 -->
+        <div class="feature-card">
+          <div class="feature-icon-wrapper blue">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 16v-4"></path><path d="M12 8h.01"></path></svg>
+          </div>
+          <h3>Human-Like Browsing</h3>
+          <p>Uses randomized scrolling patterns and dynamic delays (30s-90s) to behave exactly like a real user and protect your account.</p>
+        </div>
+        
+        <!-- Feature 2 -->
+        <div class="feature-card">
+          <div class="feature-icon-wrapper purple">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          </div>
+          <h3>Daily Safety Limits</h3>
+          <p>Strictly enforces daily email limits by verifying the network clock. Prevents rapid-fire sending that triggers spam filters.</p>
+        </div>
+        
+        <!-- Feature 3 -->
+        <div class="feature-card">
+          <div class="feature-icon-wrapper green">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+          </div>
+          <h3>Smart Matching</h3>
+          <p>Reads exact job descriptions and only triggers if your experience, location, and technical skills perfectly align.</p>
+        </div>
+        
+        <!-- Feature 4 -->
+        <div class="feature-card">
+          <div class="feature-icon-wrapper orange">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
+          </div>
+          <h3>Duplicate Protection</h3>
+          <p>Maintains a persistent local database in Excel to guarantee you never double-apply to the same recruiter twice.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        <!-- Explicit Download Buttons -->
-        <div class="download-grid">
-          <a [href]="win64Link" class="btn btn-windows">
-            <svg viewBox="0 0 88 88" width="20" height="20"><path fill="currentColor" d="M0 12.402l35.687-4.86.016 34.423-35.67-.156V12.402zm35.67 33.529l.028 34.453L0 75.44V46.07l35.67-.139zM87.33 0l.006 41.677-47.584.225V5.553L87.33 0zM39.752 46.223h47.584V87.69l-47.582-6.52v-34.94z"/></svg>
-            Download for Windows (64-bit)
-          </a>
+  <!-- How it Works Section -->
+  <section id="how-it-works" class="how-it-works-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>How it <span class="highlight">Works</span></h2>
+        <p>A simple but powerful workflow that completely automates your job applications while keeping your account safe.</p>
+      </div>
+
+      <div class="steps-container">
+        <!-- Step 1 -->
+        <div class="step-card">
+          <div class="step-number">01</div>
+          <div class="step-content">
+            <h3>Configure Profile</h3>
+            <p>Enter your Gmail app credentials, upload your PDF resume, and define the specific role you are targeting.</p>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="step-card">
+          <div class="step-number">02</div>
+          <div class="step-content">
+            <h3>Select Browser</h3>
+            <p>Auto-detect or manually select your installed Chromium-based browser (Google Chrome, Microsoft Edge, or Brave) for secure automation.</p>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="step-card">
+          <div class="step-number">03</div>
+          <div class="step-content">
+            <h3>Provide Job Search URL</h3>
+            <p>Paste a LinkedIn search URL with your desired filters (e.g., specific location, remote, experience level) targeting LinkedIn posts.</p>
+          </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="step-card">
+          <div class="step-number">04</div>
+          <div class="step-content">
+            <h3>Automated Outreach</h3>
+            <p>The app scrapes LinkedIn posts, intelligently extracts email addresses from the content, sends personalized cover letters, and respects daily safety limits (max 50/day) to prevent bans.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Creator Section -->
+  <section id="creator" class="creator-section">
+    <div class="container">
+      <div class="creator-card">
+        <div class="creator-avatar">
+          <div class="avatar-placeholder">HK</div>
+        </div>
+        <div class="creator-info">
+          <h2>Meet the <span class="highlight">Creator</span></h2>
+          <p class="creator-name">Harsh Kumar</p>
+          <p class="creator-bio">Software Engineer & Automation Enthusiast</p>
           
-          <a [href]="win32Link" class="btn btn-windows-alt">
-            Download for Windows (32-bit)
-          </a>
-
-          <a [href]="macLink" class="btn btn-mac">
-            <svg viewBox="0 0 384 512" width="18" height="18"><path fill="currentColor" d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
-            Download for Mac (.dmg)
-          </a>
-
-          <a [href]="linuxLink" class="btn btn-linux">
-            <svg viewBox="0 0 448 512" width="20" height="20"><path fill="currentColor" d="M220.8 123.3c1.1 0 2.2 0 3.2.1 44.4 2.8 84.4 20.8 116.3 54.7-18.1 13.9-38.6 30.6-56.6 44.7-20.9-24.8-49.8-39.7-82-41.3-46.7-2.3-90.1 25.4-106.8 69.8-16.7 44.4 .6 93.3 42.1 119.1 41.5 25.8 95.8 17.5 128.5-19.8 12.2-13.9 6.8-23 6.8-23-23.7-32-48.4-63.5-73.4-94.4-19.3-23.9 15.6-36.9 29.8-18.7 34 43.6 66.8 88.5 101.4 131.5v-18.2c-.3-40.8-23.7-83.3-69.5-103.5-36-15.8-94.2-24.1-137.9-17-43.7 7.1-84 37.8-101.9 77.2-17.8 39.4-9.3 92.5 23.9 126.9 33.2 34.4 86.8 45.3 133 36.1 46.2-9.2 87.5-44.5 107.1-85v46c0 14.5-9.4 12.1-12.8 28.5-8.2 38.6-36.4 70.8-73.3 84.3-37 13.5-81.8 11.6-117.4-5.2-35.6-16.8-65-48.2-76.8-84.3-11.8-36.1-4.7-81.7 18.7-111.4 23.4-29.6 62.1-47 101-51.4z" /></svg>
-            Download for Linux (.AppImage)
-          </a>
-        </div>
-        <p class="license-note">MIT License - 100% Free - <a href="https://github.com/HRathi553/LinkedIn-Job-Automator">View Source Code</a></p>
-      </div>
-
-      <!-- Demo Video / Image Space -->
-      <div class="hero-media">
-        <div class="video-container">
-            <!-- Embedding YouTube video here -->
-           <iframe width="100%" height="100%" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=0&mute=1&loop=1" title="App Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <div class="creator-links">
+            <a href="mailto:hrathi553@gmail.com" class="social-link" title="Email" target="_blank">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <span>Email</span>
+            </a>
+            <a href="https://www.linkedin.com/in/harsh-rathi-7965041a6/" class="social-link" title="LinkedIn" target="_blank">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              <span>LinkedIn</span>
+            </a>
+            <a href="https://x.com/hrathi_5" class="social-link" title="Twitter" target="_blank">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+              <span>Twitter</span>
+            </a>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Features Section -->
-    <section class="features">
-      <div class="feature-card">
-        <h3>🤖 Human-Like Browsing</h3>
-        <p>Uses randomized scrolling patterns and dynamic delays to bypass standard automation detection safely.</p>
+  <!-- CTA Footer -->
+  <footer class="footer-cta">
+    <div class="container text-center">
+      <h2>Ready to upgrade your job hunt?</h2>
+      <p>Download the desktop client today and take back your free time.</p>
+      
+      <div id="alternative-downloads" class="download-options mt-4">
+        <a [href]="win64Link" class="btn btn-primary">Download .exe (64-bit)</a>
+        <!-- We can add other platforms later, displaying as secondary -->
+        <a href="https://github.com/HRathi553/LinkedInn-Automation-Landing-Page/releases" target="_blank" class="btn btn-outline">View All Releases</a>
       </div>
-      <div class="feature-card">
-        <h3>🛡️ Daily Safety Limits</h3>
-        <p>Strictly enforces daily email limits by verifying the network clock, protecting your account from bans.</p>
+      
+      <div class="footer-bottom">
+        <p>100% Free forever</p>
       </div>
-      <div class="feature-card">
-        <h3>🎯 Smart Matching</h3>
-        <p>Reads exact job descriptions and only applies if your experience and technical skills perfectly align.</p>
-      </div>
-      <div class="feature-card">
-        <h3>🔄 Duplicate Protection</h3>
-        <p>Maintains a persistent local database in Excel to guarantee you never double-apply to the same recruiter.</p>
-      </div>
-    </section>
+    </div>
+  </footer>
 
-  </main>
 </div>

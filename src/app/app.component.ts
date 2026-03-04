@@ -7,12 +7,9 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'LinkedIn Job Automator';
+  title = 'AutoApply Pro';
   version = 'v1.0.0';
   
-  // Replace these with your actual GitHub Release links later
-  win64Link = 'https://github.com/HRathi553/LinkedIn-Job-Automator/releases/latest/download/LinkedIn-Job-Automator-Setup-x64.exe';
-  win32Link = 'https://github.com/HRathi553/LinkedIn-Job-Automator/releases/latest/download/LinkedIn-Job-Automator-Setup-ia32.exe';
-  macLink = 'https://github.com/HRathi553/LinkedIn-Job-Automator/releases/latest/download/LinkedIn-Job-Automator-Setup.dmg';
-  linuxLink = 'https://github.com/HRathi553/LinkedIn-Job-Automator/releases/latest/download/LinkedIn-Job-Automator-Setup.AppImage';
+  // Pointing to the public landing page repository's release section
+  win64Link = 'https://github.com/HRathi553/LinkedInn-Automation-Landing-Page/releases/download/v1.0.0/AutoApply%20Pro%20Setup%201.0.0.exe';
 }

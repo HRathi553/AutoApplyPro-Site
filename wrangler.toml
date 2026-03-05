@@ -1,3 +1,4 @@
 name = "autoapplypro"
 compatibility_date = "2024-03-05"
-pages_build_output_dir = "dist/landing-page/browser"
+[assets]
+directory = "dist/landing-page/browser"
